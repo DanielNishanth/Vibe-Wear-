@@ -1,0 +1,1809 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* Icons */
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons a {
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background-image: url("hero.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Shop By Category */
+
+.categories {
+    padding: 80px 60px;
+    background-color: #F3EDE4;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    font-size: 16px;
+    color: #666;
+}
+
+.category-group {
+    margin-bottom: 60px;
+}
+
+.category-group > h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.category-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.category-card h4 {
+    font-size: 22px;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    z-index: 2;
+    color: white;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+}
+
+.category-card:hover img {
+    transform: scale(1.08);
+}
+
+.category-card:hover::after {
+    background: rgba(0, 0, 0, 0.5);
+}
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+/* Trending Products */
+
+.trending {
+    padding: 80px 60px;
+    background-color: #FAF8F4;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-category {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.deal-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* Men's Collection */
+
+.men-collection {
+    padding: 80px 60px;
+    background-color:  #EAE5DE;
+}
+
+.men-product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.men-product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.men-product-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.men-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.men-product-info {
+    padding: 20px;
+}
+
+.men-product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.men-product-info p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* Women's Collection */
+
+.women-collection {
+    padding: 80px 60px;
+    background-color: #1C1C1C;
+}
+
+.women-product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.women-product-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.women-product-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.women-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.women-product-info {
+    padding: 20px;
+}
+
+.women-product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.women-product-info p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* Best Deals */
+
+.best-deals {
+    padding: 80px 60px;
+    background-color: #f8f8f8;
+}
+
+.deal-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.deal-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.deal-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.deal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deal-info {
+    padding: 20px;
+}
+
+.deal-category {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.deal-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.deal-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* Instagram Section */
+
+.instagram {
+    padding: 80px 60px;
+    background-color: white;
+    text-align: center;
+}
+
+.instagram-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.instagram-card {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.instagram-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instagram-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Footer */
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 60px 60px 20px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.footer-content > p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    color: #777;
+    font-size: 13px;
+}
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .category-container,
+    .product-container,
+    .men-product-container,
+    .women-product-container,
+    .deal-container,
+    .instagram-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 40px 30px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .categories,
+    .trending,
+    .men-collection,
+    .women-collection,
+    .best-deals,
+    .instagram {
+        padding: 60px 30px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 15px 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+    .hero {
+        width: 100%;
+        min-height: 70vh;
+        padding: 30px 20px;
+        overflow: hidden;
+        background-position: 35% center;
+    }
+
+    .hero-content {
+    width: 65%;
+    max-width: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+    .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+    .hero h1 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    white-space: normal;
+}
+
+    .hero-description {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 190px;
+}
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 180px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .categories,
+    .trending,
+    .men-collection,
+    .women-collection,
+    .best-deals,
+    .instagram {
+        padding: 50px 20px;
+    }
+
+    .category-container,
+    .product-container,
+    .men-product-container,
+    .women-product-container,
+    .deal-container,
+    .instagram-container {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        height: 200px;
+    }
+
+    .product-image,
+    .men-product-image,
+    .women-product-image,
+    .deal-image {
+        height: 350px;
+    }
+
+    .instagram-card {
+        height: 300px;
+    }
+
+    .footer {
+        padding: 50px 20px 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+/* Search Box */
+
+.search-box {
+    display: none;
+    padding: 15px 60px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.search-box input {
+    width: 60%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+/* Wishlist Button */
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+}
+
+.wishlist-btn.active {
+    background-color: black;
+    color: white;
+}
+.men-product-card,
+.women-product-card,
+.deal-card {
+    position: relative;
+}
+/* Wishlist Section */
+
+.wishlist-section {
+    padding: 80px 60px;
+    background-color: #ffffff;
+}
+
+.wishlist-container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* ================================
+   CART SECTION
+================================ */
+
+.cart-section {
+    width: 100%;
+    padding: 80px 60px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+.cart-section .section-title {
+    width: 100%;
+    text-align: center;
+}
+
+.cart-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+
+/* Cart Product */
+
+.cart-container .cart-product {
+    width: 100%;
+    min-width: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+/* Cart Image */
+
+.cart-container .cart-product img {
+    display: block;
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+
+/* Cart Information */
+
+.cart-container .cart-product .product-info,
+.cart-container .cart-product .men-product-info,
+.cart-container .cart-product .women-product-info,
+.cart-container .cart-product .deal-info {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+
+/* Hide Wishlist + Add Cart inside My Cart */
+
+.cart-container .wishlist-btn,
+.cart-container .cart-btn {
+    display: none !important;
+}
+
+
+/* Remove Button */
+
+.cart-container .remove-cart-btn {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    padding: 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.cart-container .remove-cart-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .cart-section {
+        padding: 60px 30px;
+    }
+
+    .cart-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .cart-section {
+        padding: 50px 20px;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-container .cart-product img {
+        height: 350px !important;
+    }
+
+}
+/* Mobile Cart */
+
+@media (max-width: 900px) {
+
+    .cart-section {
+        padding: 60px 30px;
+    }
+
+    .cart-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .cart-section {
+        padding: 50px 20px;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* CART COUNT BADGE */
+
+#cart-icon {
+    position: relative;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: black;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WISHLIST COUNT BADGE */
+
+#wishlist-icon {
+    position: relative;
+}
+
+#wishlist-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: black;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================
+   VIBE WEAR - PREMIUM LUXURY UI
+   ========================================= */
+
+/* Main Premium Backgrounds */
+.categories {
+    background: linear-gradient(135deg, #24211e, #151515);
+    color: #ffffff;
+}
+
+.trending {
+    background: linear-gradient(135deg, #181818, #242424);
+    color: #ffffff;
+}
+
+.men-collection {
+    background: linear-gradient(135deg, #211f1c, #121212);
+    color: #ffffff;
+}
+
+.women-collection {
+    background: linear-gradient(135deg, #181614, #0d0d0d);
+    color: #ffffff;
+}
+
+.best-deals {
+    background: linear-gradient(135deg, #29231d, #151515);
+    color: #ffffff;
+}
+
+.instagram {
+    background: linear-gradient(135deg, #211e1b, #111111);
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    background: #111111;
+}
+
+.logo {
+    color: #ffffff;
+}
+
+.nav-links a {
+    color: #ffffff;
+}
+
+.nav-icons a {
+    color: #ffffff;
+}
+
+/* Section Titles */
+.section-title h2,
+.section-title p,
+.section-title span {
+    color: #ffffff;
+}
+
+.category-group > h3 {
+    color: #ffffff;
+}
+
+/* Product Cards */
+.product-card,
+.men-product-card,
+.women-product-card,
+.deal-card {
+    background: #22201d;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Product Text */
+.product-info h3,
+.men-product-info h3,
+.women-product-info h3,
+.deal-info h3 {
+    color: #ffffff;
+}
+
+.product-category,
+.deal-category {
+    color: #aaa39a;
+}
+
+.product-price,
+.men-product-info p,
+.women-product-info p,
+.deal-price {
+    color: #e8d3ad;
+}
+
+/* Premium Buttons */
+.btn,
+.deal-btn,
+.instagram-btn {
+    background: #e8d3ad;
+    color: #171717;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.deal-btn:hover,
+.instagram-btn:hover {
+    background: #ffffff;
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    background: rgba(255, 255, 255, 0.92);
+    color: #111111;
+}
+
+/* Search */
+.search-box {
+    background: #1b1b1b;
+}
+
+.search-box input {
+    background: #242424;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+/* Wishlist Section */
+.wishlist-section {
+    background: #171717;
+    color: #ffffff;
+}
+
+/* Cart Section */
+.cart-section {
+    background: #1c1a18;
+    color: #ffffff;
+}
+
+.cart-container .cart-product {
+    background: #242220;
+    color: #ffffff;
+}
+
+.cart-container .cart-product h3,
+.cart-container .cart-product p {
+    color: #ffffff;
+}
+
+/* Category Card Premium Effect */
+.category-card {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Premium Hover */
+.product-card,
+.men-product-card,
+.women-product-card,
+.deal-card,
+.category-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-card:hover,
+.men-product-card:hover,
+.women-product-card:hover,
+.deal-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================================
+   PREMIUM PRODUCT CARDS
+   ========================================= */
+
+.product-card,
+.men-product-card,
+.women-product-card,
+.deal-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(232, 211, 173, 0.18);
+    background: #211f1c;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+/* Product Images */
+.product-image,
+.men-product-image,
+.women-product-image,
+.deal-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Smooth Image Zoom */
+.product-image img,
+.men-product-image img,
+.women-product-image img,
+.deal-image img {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img,
+.men-product-card:hover .men-product-image img,
+.women-product-card:hover .women-product-image img,
+.deal-card:hover .deal-image img {
+    transform: scale(1.05);
+}
+
+/* Product Information */
+.product-info,
+.men-product-info,
+.women-product-info,
+.deal-info {
+    padding: 22px;
+}
+
+/* Product Name */
+.product-info h3,
+.men-product-info h3,
+.women-product-info h3,
+.deal-info h3 {
+    font-size: 19px;
+    letter-spacing: 0.3px;
+}
+
+/* Price */
+.product-price,
+.men-product-info p,
+.women-product-info p,
+.deal-price {
+    color: #e8d3ad;
+    font-size: 17px;
+}
+
+/* Deal Button */
+.deal-btn {
+    border-radius: 4px;
+    padding: 11px 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Card Hover */
+.product-card:hover,
+.men-product-card:hover,
+.women-product-card:hover,
+.deal-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(232, 211, 173, 0.4);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* =========================================
+   PREMIUM CATEGORY CARDS
+   ========================================= */
+
+.category-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(232, 211, 173, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+/* Stronger Luxury Overlay */
+.category-card::after {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+/* Category Image */
+.category-card img {
+    transition: transform 0.6s ease;
+}
+
+/* Category Name */
+.category-card h4 {
+    font-size: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    bottom: 22px;
+    left: 22px;
+    z-index: 2;
+}
+
+/* Hover */
+.category-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(232, 211, 173, 0.45);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+.category-card:hover img {
+    transform: scale(1.08);
+}
+
+/* =========================================
+   PREMIUM NAVBAR
+   ========================================= */
+
+.navbar {
+    background: rgba(15, 15, 15, 0.96);
+    border-bottom: 1px solid rgba(232, 211, 173, 0.12);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo */
+.logo {
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Navigation Links */
+.nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Gold underline effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background: #e8d3ad;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e8d3ad;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Navbar Icons */
+.nav-icons a {
+    transition: all 0.3s ease;
+}
+
+.nav-icons a:hover {
+    color: #e8d3ad;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   PREMIUM HERO SECTION
+   ========================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark cinematic overlay */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.78),
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.05)
+    );
+    pointer-events: none;
+}
+
+/* Keep content above overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Small Collection Text */
+.hero-subtitle {
+    color: #e8d3ad;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+/* Main Heading */
+.hero h1 {
+    letter-spacing: 1px;
+}
+
+/* Description */
+.hero-description {
+    color: #d0cbc3;
+}
+
+/* Hero Buttons */
+.hero-buttons .btn {
+    border: 1px solid #e8d3ad;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+}
+
+.hero-buttons .btn:hover {
+    background: transparent;
+    color: #e8d3ad;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   PREMIUM SECTION HEADINGS
+   ========================================= */
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+/* Main Heading */
+.section-title h2 {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* Small Subtitle */
+.section-title p {
+    color: #aaa39a;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Gold Accent Line */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background: #e8d3ad;
+    margin: 16px auto 0;
+}
+
+/* =========================================
+   PREMIUM PRODUCT IMAGE EFFECT
+   ========================================= */
+
+.product-image img,
+.men-product-image img,
+.women-product-image img,
+.deal-image img {
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+/* Hover Image */
+.product-card:hover img,
+.men-product-card:hover img,
+.women-product-card:hover img,
+.deal-card:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.05);
+}
+
+/* Image bottom fade */
+.product-image::after,
+.men-product-image::after,
+.women-product-image::after,
+.deal-image::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.25),
+        transparent
+    );
+    pointer-events: none;
+}
+
+/* =========================================
+   PREMIUM FOOTER
+   ========================================= */
+
+.footer {
+    background: #0b0b0b;
+    color: #ffffff;
+    border-top: 1px solid rgba(232, 211, 173, 0.15);
+    padding-top: 60px;
+}
+
+/* Footer Headings */
+.footer h3,
+.footer h4 {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Footer Text */
+.footer p {
+    color: #aaa39a;
+    line-height: 1.7;
+}
+
+/* Footer Links */
+.footer a {
+    color: #aaa39a;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #e8d3ad;
+    padding-left: 4px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #777;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+/* =========================================
+   PREMIUM SEARCH BOX
+   ========================================= */
+
+.search-box {
+    background: rgba(18, 18, 18, 0.98);
+    border: 1px solid rgba(232, 211, 173, 0.18);
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Search Input */
+.search-box input {
+    background: #22201d;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus */
+.search-box input:focus {
+    outline: none;
+    border-color: #e8d3ad;
+    box-shadow: 0 0 0 2px rgba(232, 211, 173, 0.08);
+}
+
+/* Search Button */
+.search-box button {
+    background: #e8d3ad;
+    color: #111111;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   PREMIUM WISHLIST
+   ========================================= */
+
+.wishlist-section {
+    background: linear-gradient(135deg, #171513, #0d0d0d);
+    border-top: 1px solid rgba(232, 211, 173, 0.08);
+}
+
+/* Wishlist Heading */
+.wishlist-section h2 {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Wishlist Product Card */
+.wishlist-section .product-card {
+    background: #211f1c;
+    border: 1px solid rgba(232, 211, 173, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Wishlist Empty Message */
+.wishlist-section p {
+    color: #aaa39a;
+}
+
+/* Wishlist Button */
+.wishlist-section .wishlist-btn {
+    transition: all 0.3s ease;
+}
+
+.wishlist-section .wishlist-btn:hover {
+    transform: scale(1.08);
+}
+
+/* =========================================
+   PREMIUM CART
+   ========================================= */
+
+.cart-section {
+    background: linear-gradient(135deg, #1c1a18, #0d0d0d);
+    border-top: 1px solid rgba(232, 211, 173, 0.08);
+}
+
+/* Cart Container */
+.cart-container {
+    background: transparent;
+}
+
+/* Cart Product */
+.cart-container .cart-product {
+    background: #211f1c;
+    border: 1px solid rgba(232, 211, 173, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* Cart Hover */
+.cart-container .cart-product:hover {
+    border-color: rgba(232, 211, 173, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Cart Product Name */
+.cart-container .cart-product h3 {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Cart Price */
+.cart-container .cart-product p {
+    color: #e8d3ad;
+}
+
+/* Cart Buttons */
+.cart-container button {
+    transition: all 0.3s ease;
+}
+
+.cart-container button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   PREMIUM INSTAGRAM SECTION
+   ========================================= */
+
+.instagram {
+    background: linear-gradient(135deg, #211e1b, #0d0d0d);
+    border-top: 1px solid rgba(232, 211, 173, 0.08);
+}
+
+/* Instagram Images */
+.instagram img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.instagram img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.08);
+}
+
+/* Instagram Button */
+.instagram-btn {
+    border: 1px solid #e8d3ad;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+}
+
+.instagram-btn:hover {
+    background: transparent;
+    color: #e8d3ad;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   FINAL PREMIUM SPACING & POLISH
+   ========================================= */
+
+.categories,
+.trending,
+.men-collection,
+.women-collection,
+.best-deals,
+.instagram {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+/* Consistent section titles */
+.section-title {
+    margin-bottom: 50px;
+}
+
+/* Smooth section transition */
+.categories,
+.trending,
+.men-collection,
+.women-collection,
+.best-deals,
+.instagram {
+    position: relative;
+}
+
+/* Premium subtle divider */
+.trending,
+.women-collection,
+.instagram {
+    border-top: 1px solid rgba(232, 211, 173, 0.06);
+}
+
+/* =========================================
+   PRODUCT ACTION BUTTONS - FIX
+   ========================================= */
+
+.product-card,
+.men-product-card,
+.women-product-card,
+.deal-card {
+    position: relative;
+}
+
+.wishlist-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.cart-btn {
+    display: block !important;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: 1px solid #e8d3ad;
+    border-radius: 5px;
+    background: #e8d3ad;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   VIBE WEAR - PRODUCT ACTION BUTTON FIX
+   ========================================= */
+
+.product-card .wishlist-btn,
+.men-product-card .wishlist-btn,
+.women-product-card .wishlist-btn,
+.deal-card .wishlist-btn {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    top: 12px;
+    right: 12px;
+    z-index: 999 !important;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-card .cart-btn,
+.men-product-card .cart-btn,
+.women-product-card .cart-btn,
+.deal-card .cart-btn {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: 1px solid #e8d3ad;
+    border-radius: 5px;
+    background: #e8d3ad;
+    color: #111111;
+    cursor: pointer;
+}
+
+/* MEN CATEGORIES - CIRCLE SINGLE ROW */
+
+.categories .category-group:nth-of-type(2) .category-container {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 28px !important;
+    overflow-x: auto !important;
+    justify-content: center;
+    padding: 10px 5px 30px;
+}
+
+.categories .category-group:nth-of-type(2) .category-card {
+    flex: 0 0 140px !important;
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
+.categories .category-group:nth-of-type(2) .category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories .category-group:nth-of-type(2) .category-card h4 {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 13px;
+    padding: 12px 4px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .categories .category-group:nth-of-type(2) .category-container {
+        justify-content: flex-start;
+        gap: 18px !important;
+    }
+
+    .categories .category-group:nth-of-type(2) .category-card {
+        flex: 0 0 110px !important;
+        width: 110px !important;
+        height: 110px !important;
+    }
+
+    .categories .category-group:nth-of-type(2) .category-card h4 {
+        font-size: 11px;
+        padding: 8px 2px;
+    }
+}
+
+/* WOMEN CATEGORIES - CIRCLE SINGLE ROW */
+
+.categories .category-group:nth-of-type(3) .category-container {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 28px !important;
+    overflow-x: auto !important;
+    justify-content: center;
+    padding: 10px 5px 30px;
+}
+
+.categories .category-group:nth-of-type(3) .category-card {
+    flex: 0 0 140px !important;
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
+.categories .category-group:nth-of-type(3) .category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories .category-group:nth-of-type(3) .category-card h4 {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 13px;
+    padding: 12px 4px;
+}
+
+/* WOMEN - MOBILE */
+
+@media (max-width: 600px) {
+
+    .categories .category-group:nth-of-type(3) .category-container {
+        justify-content: flex-start;
+        gap: 18px !important;
+    }
+
+    .categories .category-group:nth-of-type(3) .category-card {
+        flex: 0 0 110px !important;
+        width: 110px !important;
+        height: 110px !important;
+    }
+
+    .categories .category-group:nth-of-type(3) .category-card h4 {
+        font-size: 11px;
+        padding: 8px 2px;
+    }
+}
