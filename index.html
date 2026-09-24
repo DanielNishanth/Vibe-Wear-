@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VIBE WEAR</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar">
+
+        <div class="logo">
+            VIBE WEAR
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#" onclick="showAllMenProducts()">Men</a></li>
+            <li><a href="#" onclick="showAllWomenProducts()">Women</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#deals">Deals</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#" id="search-icon">🔍</a>
+            <a href="#" id="wishlist-icon">
+    ❤️
+    <span id="wishlist-count">0</span>
+</a>
+            <a href="#" id="cart-icon">
+    🛒
+    <span id="cart-count">0</span>
+</a>
+        </div>
+
+    </nav>
+    <div class="search-box">
+    <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-subtitle">NEW COLLECTION 2026</p>
+
+        <h1>Find Your Vibe.<br>Wear Your Style.</h1>
+
+        <p class="hero-description">
+            Discover the latest fashion for men and women.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#men" class="btn">SHOP MEN</a>
+            <a href="#women" class="btn">SHOP WOMEN</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- Shop By Category -->
+<section class="categories">
+
+    <div class="section-title">
+        <p>EXPLORE</p>
+        <h2>Shop By Category</h2>
+        <span>Find your style, find your vibe.</span>
+    </div>
+
+    <!-- Men's Categories -->
+    <div class="category-group">
+
+        <h3>Men</h3>
+
+        <div class="category-container">
+
+            <div class="category-card" onclick="showMenCategory('T-Shirts')">
+                <img src="t-shirts.jpeg">
+                <h4>T-Shirts</h4>
+            </div>
+
+            <div class="category-card" onclick="showMenCategory('Shirts')">
+                <img src="shirts.jpeg" alt="">
+                <h4>Shirts</h4>
+            </div>
+
+            <div class="category-card" onclick="showMenCategory('Jeans')">
+                <img src="jeans.jpeg" alt="">
+                <h4>Jeans</h4>
+            </div>
+
+            <div class="category-card" onclick="showMenCategory('Street Wear')">
+                <img src="street wear.jpeg" alt="">
+                <h4>Street Wear</h4>
+            </div>
+
+            <div class="category-card" onclick="showMenCategory('Shorts')">
+                <img src="shortss.jpeg" alt="">
+                <h4>Shorts</h4>
+            </div>
+
+            <div class="category-card" onclick="showMenCategory('Formal Shirts')">
+                <img src="formal.png" alt="">
+                <h4>Formal Shirts</h4>
+            </div>
+
+            <div class="category-card" onclick="showMenCategory('Pants')">
+                <img src="pants.jpeg" alt="">
+                <h4>Pants</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Women's Categories -->
+    <div class="category-group">
+
+        <h3>Women</h3>
+
+        <div class="category-container">
+
+            <div class="category-card" onclick="showWomenCategory('Kurtas')">
+                <img src="Kurtas.jpeg" alt="">
+                <h4>Kurtas</h4>
+            </div>
+
+            <div class="category-card" onclick="showWomenCategory('Tops & Shirts')">
+                <img src="top and shirts.jpeg" alt="">
+                <h4>Tops & Shirts</h4>
+            </div>
+
+            <div class="category-card" onclick="showWomenCategory('Sarees')">
+                <img src="sarees.jpeg" alt="">
+                <h4>Sarees</h4>
+            </div>
+
+            <div class="category-card" onclick="showWomenCategory('Jeans')">
+                <img src="Jeans...jpeg" alt="">
+                <h4>Jeans</h4>
+            </div>
+
+            <div class="category-card" onclick="showWomenCategory('T-Shirts')">
+                <img src="tshirts ....jpeg" alt="">
+                <h4>T-Shirts</h4>
+            </div>
+
+            <div class="category-card" onclick="showWomenCategory('Chudi')">
+                <img src="chudiii.png" alt="">
+                <h4>Chudi</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Trending Products -->
+<section class="trending" id="trending">
+
+    <div class="section-title">
+        <p>WHAT'S HOT</p>
+        <h2>Trending Products</h2>
+        <span>Popular styles you don't want to miss.</span>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="oversized.png" alt="Trending Fashion Product">
+            </div>
+            <button class="wishlist-btn">❤️</button>
+
+            <div class="product-info">
+                <p class="product-category">Men's Fashion</p>
+                <h3>Oversized T-Shirt</h3>
+                <p class="product-price">₹499</p>
+                <a href="https://link.amazon/B05jTIHXU" class="deal-btn">VIEW DEAL</a>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="product-card">
+    <div class="product-image">
+        <img src="casual top.png" alt="Trending Fashion Product">
+    </div>
+
+    <div class="product-info">
+        <p class="product-category">Women's Fashion</p>
+        <h3>Stylish Casual Top</h3>
+        <p class="product-price">₹599</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+<div class="product-card">
+    <div class="product-image">
+        <img src="denim jeans.png" alt="Trending Fashion Product">
+    </div>
+
+    <div class="product-info">
+        <p class="product-category">Men's Fashion</p>
+        <h3>Casual Denim Jeans</h3>
+        <p class="product-price">₹799</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="elegant.png" alt="Trending Fashion Product">
+    </div>
+
+    <div class="product-info">
+        <p class="product-category">Women's Fashion</p>
+        <h3>Elegant Casual Dress</h3>
+        <p class="product-price">₹899</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+
+    </div>
+
+</section>
+<!-- Men's Collection -->
+<section class="men-collection" id="men">
+
+    <div class="section-title">
+        <p>FOR HIM</p>
+        <h2>Men's Collection</h2>
+        <span>Fresh styles for every vibe.</span>
+    </div>
+
+    <div class="men-product-container">
+
+        <div class="men-product-card">
+            <div class="men-product-image">
+                <img src="men product 1.png" alt="Men Fashion">
+            </div>
+
+            <button class="wishlist-btn">❤️</button>
+
+            <div class="men-product-info">
+                <h3>Classic Casual Shirt</h3>
+                <p class="product-category">Shirts</p>
+
+                <p>₹699</p>
+                <a href="#" class="deal-btn">VIEW DEAL</a>
+            </div>
+        </div>
+        <div class="men-product-card">
+    <div class="men-product-image">
+        <img src="men product 2.png" alt="Men Fashion">
+    </div>
+
+    <div class="men-product-info">
+        <h3>Oversized Street T-Shirt</h3>
+        <p class="product-category">T-Shirts</p>
+        <p>₹499</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+<div class="men-product-card">
+    <div class="men-product-image">
+        <img src="men product 3.png" alt="Men Jeans">
+    </div>
+
+    <div class="men-product-info">
+        <h3>Relaxed Fit Jeans</h3>
+        <p class="product-category">Jeans</p>
+        <p>₹899</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+<div class="men-product-card">
+    <div class="men-product-image">
+        <img src="men product 4.png" alt="Men Formal Wear">
+    </div>
+
+    <div class="men-product-info">
+        <h3>Smart Formal Trousers</h3>
+        <p class="product-category">Pants</p>
+        <p>₹999</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+
+    </div>
+
+</section>
+<!-- Women's Collection -->
+<section class="women-collection" id="women">
+
+    <div class="section-title">
+        <p>FOR HER</p>
+        <h2>Women's Collection</h2>
+        <span>Trendy styles made for every vibe.</span>
+    </div>
+
+    <div class="women-product-container">
+
+        <div class="women-product-card">
+            <div class="women-product-image">
+                <img src="Elegant casueal.jpg" alt="Women's Fashion">
+            </div>
+
+            <div class="women-product-info">
+                <h3>Elegant Casual Top</h3>
+                <p class="product-category">Tops & Shirts</p>
+                <p>₹599</p>
+                <a href="#" class="deal-btn">VIEW DEAL</a>
+            </div>
+        </div>
+        <div class="women-product-card">
+    <div class="women-product-image">
+        <img src="Stylish kurta seet.png" alt="Women's Fashion">
+    </div>
+
+    <div class="women-product-info">
+        <h3>Stylish Kurta Set</h3>
+        <p class="product-category">Kurtas</p>
+        <p>₹799</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+<div class="women-product-card">
+    <div class="women-product-image">
+        <img src="Elegant saree.png" alt="Women's Saree">
+    </div>
+
+    <div class="women-product-info">
+        <h3>Elegant Designer Saree</h3>
+        <p class="product-category">Sarees</p>
+        <p>₹899</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+<div class="women-product-card">
+    <div class="women-product-image">
+        <img src="Wide leg jeans.png" alt="Women's Fashion">
+    </div>
+
+    <div class="women-product-info">
+        <h3>Trendy Wide Leg Jeans</h3>
+        <p class="product-category">Jeans</p>
+        <p>₹849</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+
+    </div>
+
+</section>
+<!-- Best Deals -->
+<section class="best-deals" id="deals">
+
+    <div class="section-title">
+        <p>DON'T MISS OUT</p>
+        <h2>Best Deals</h2>
+        <span>Great styles. Better prices.</span>
+    </div>
+
+    <div class="deal-container">
+
+        <div class="deal-card">
+            <div class="deal-image">
+                <img src="Everyday style.png" alt="Best Fashion Deal">
+            </div>
+
+            <div class="deal-info">
+                <p class="deal-category">Men's Fashion</p>
+                <h3>Everyday Style Picks</h3>
+                <p class="deal-price">Starting from ₹399</p>
+                <a href="#" class="deal-btn">VIEW DEAL</a>
+            </div>
+        </div>
+        <div class="deal-card">
+    <div class="deal-image">
+        <img src="Trendy fashion.png" alt="Women's Fashion Deal">
+    </div>
+
+    <div class="deal-info">
+        <p class="deal-category">Women's Fashion</p>
+        <h3>Trendy Fashion Picks</h3>
+        <p class="deal-price">Starting from ₹499</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+<div class="deal-card">
+    <div class="deal-image">
+        <img src="Smart casueal.png" alt="Men's Fashion Deal">
+    </div>
+
+    <div class="deal-info">
+        <p class="deal-category">Men's Fashion</p>
+        <h3>Smart Casual Essentials</h3>
+        <p class="deal-price">Starting from ₹599</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+<div class="deal-card">
+    <div class="deal-image">
+        <img src="Ethinic wear.png" alt="Women's Fashion Deal">
+    </div>
+
+    <div class="deal-info">
+        <p class="deal-category">Women's Fashion</p>
+        <h3>Everyday Ethnic Wear</h3>
+        <p class="deal-price">Starting from ₹699</p>
+        <a href="#" class="deal-btn">VIEW DEAL</a>
+    </div>
+</div>
+</div>
+
+<!-- Cart Section -->
+<section class="cart-section">
+
+    <div class="section-title">
+        <p>YOUR BAG</p>
+        <h2>My Cart</h2>
+        <span>Your selected fashion picks.</span>
+    </div>
+
+    <div class="cart-container" id="cart-container">
+    </div>
+
+</section>
+
+    
+    <!-- Wishlist Section -->
+<section class="wishlist-section">
+
+    <div class="section-title">
+        <p>YOUR PICKS</p>
+        <h2>My Wishlist</h2>
+        <span>Your saved fashion picks.</span>
+    </div>
+
+    <div class="wishlist-container" id="wishlist-container">
+    </div>
+
+</section>
+<!-- Instagram Section -->
+<section class="instagram">
+
+    <div class="section-title">
+        <p>FOLLOW THE VIBE</p>
+        <h2>Style On Instagram</h2>
+        <span>More looks, more inspiration, more vibe.</span>
+    </div>
+
+    <div class="instagram-container">
+
+        <div class="instagram-card">
+            <img src="Deal(1).png" alt="VIBE WEAR Instagram Fashion">
+        </div>
+
+        <div class="instagram-card">
+            <img src="Deal 2.png" alt="VIBE WEAR Instagram Style">
+        </div>
+
+        <div class="instagram-card">
+            <img src="Deal 3.png" alt="VIBE WEAR Instagram Fashion">
+        </div>
+
+        <div class="instagram-card">
+            <img src="Deal 4.png" alt="VIBE WEAR Instagram Style">
+        </div>
+
+    </div>
+
+    <a href="https://www.instagram.com/vibe_.wear_?stkn=MW9qaTVxaTRkYWFjMQ==" class="instagram-btn">FOLLOW US ON INSTAGRAM</a>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>VIBE WEAR</h2>
+
+        <p>
+            Find your vibe. Wear your style.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Trending</a>
+            <a href="#">Deals</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 VIBE WEAR. All rights reserved.</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
