@@ -1854,3 +1854,21 @@ body {
     }
 
 }
+/* INSTAGRAM - MOBILE SINGLE ROW */
+
+@media (max-width: 600px) {
+
+    .instagram-container {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        gap: 15px !important;
+        justify-content: flex-start !important;
+    }
+
+    .instagram-container .instagram-item {
+        flex: 0 0 150px !important;
+        width: 150px !important;
+    }
+
+}
