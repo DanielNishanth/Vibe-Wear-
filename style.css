@@ -1807,3 +1807,50 @@ body {
         padding: 8px 2px;
     }
 }
+
+/* WISHLIST - MOBILE FIX */
+
+@media (max-width: 600px) {
+
+    .wishlist-section {
+        padding: 50px 20px;
+    }
+
+    .wishlist-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+
+    .wishlist-container .product-image,
+    .wishlist-container .men-product-image,
+    .wishlist-container .women-product-image,
+    .wishlist-container .deal-image {
+        height: 220px !important;
+    }
+
+}
+
+/* MOBILE - PRODUCTS IN ONE HORIZONTAL ROW */
+
+@media (max-width: 600px) {
+
+    .product-container,
+    .men-product-container,
+    .women-product-container,
+    .deal-container {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        gap: 15px !important;
+        justify-content: flex-start !important;
+        padding-bottom: 15px;
+    }
+
+    .product-container > *,
+    .men-product-container > *,
+    .women-product-container > *,
+    .deal-container > * {
+        flex: 0 0 180px !important;
+    }
+
+}
