@@ -1899,3 +1899,78 @@ body {
         line-height: 1.7;
     }
 }
+/* =========================================
+   ABOUT US SECTION
+   ========================================= */
+
+.about-section {
+    background: linear-gradient(135deg, #211f1c, #111111);
+    color: #ffffff;
+    padding: 80px 7%;
+    text-align: center;
+    border-top: 1px solid rgba(232, 211, 173, 0.08);
+    border-bottom: 1px solid rgba(232, 211, 173, 0.08);
+}
+
+.about-section .section-title {
+    margin-bottom: 35px;
+}
+
+.about-section .section-title p {
+    color: #aaa39a;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.about-section .section-title h2 {
+    color: #ffffff;
+    font-size: 34px;
+    margin-top: 8px;
+}
+
+.about-section .section-title span {
+    color: #aaa39a;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(232, 211, 173, 0.12);
+    border-radius: 12px;
+}
+
+.about-content p {
+    color: #cfcfcf;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ABOUT - MOBILE */
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .about-section .section-title h2 {
+        font-size: 28px;
+    }
+
+    .about-content {
+        padding: 22px 18px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
