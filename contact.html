@@ -1,1 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Contact Us | VIBE WEAR</title>
+
+    <meta name="description"
+          content="Contact VIBE WEAR for questions, feedback, suggestions, or support regarding our fashion discovery website.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 22px 7%;
+            border-bottom: 1px solid rgba(232, 211, 173, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        header a {
+            color: #e8d3ad;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .contact-header span {
+            color: #e8d3ad;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+
+        .contact-header h1 {
+            font-size: 42px;
+            margin: 10px 0 15px;
+        }
+
+        .contact-header p {
+            color: #aaa39a;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 25px;
+        }
+
+        .contact-card,
+        .contact-form {
+            background: #171513;
+            border: 1px solid rgba(232, 211, 173, 0.15);
+            border-radius: 15px;
+            padding: 35px;
+        }
+
+        .contact-card h2,
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contact-card p {
+            color: #aaa39a;
+            margin-bottom: 25px;
+        }
+
+        .contact-info {
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .contact-info:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info span {
+            display: block;
+            color: #e8d3ad;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .contact-info strong {
+            font-size: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            color: #aaa39a;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 18px;
+            background: #211f1c;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 7px;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #e8d3ad;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 7px;
+            background: #e8d3ad;
+            color: #111111;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            color: #777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 18px 5%;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            main {
+                padding: 55px 18px;
+            }
+
+            .contact-header h1 {
+                font-size: 32px;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card,
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">VIBE WEAR</div>
+        <a href="index.html">← Back to Home</a>
+    </header>
+
+    <main>
+
+        <div class="contact-header">
+            <span>GET IN TOUCH</span>
+            <h1>Contact Us</h1>
+            <p>
+                Have a question, suggestion or feedback?
+                We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+
+                <h2>Let's Connect</h2>
+
+                <p>
+                    If you have questions about VIBE WEAR, our products,
+                    fashion content or website, feel free to reach out.
+                </p>
+
+                <div class="contact-info">
+                    <span>EMAIL</span>
+                    <strong>your-email@example.com</strong>
+                </div>
+
+                <div class="contact-info">
+                    <span>RESPONSE TIME</span>
+                    <strong>Usually within 1–2 business days</strong>
+                </div>
+
+            </div>
+
+            <div class="contact-form">
+
+                <h2>Send a Message</h2>
+
+                <form>
+
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Write your message..."
+                    ></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 VIBE WEAR. All rights reserved.
+    </footer>
+
+</body>
+</html>
