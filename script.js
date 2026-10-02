@@ -571,10 +571,20 @@ function showMenCategory(categoryName) {
 
         const category = card.querySelector(".product-category");
 
-        if (
-            category &&
-            category.textContent.trim().toLowerCase() === categoryName.toLowerCase()
-        ) {
+        if (!category) {
+            card.style.display = "none";
+            return;
+        }
+
+        const productCategory = category.textContent
+            .trim()
+            .toLowerCase();
+
+        const selectedCategory = categoryName
+            .trim()
+            .toLowerCase();
+
+        if (productCategory.includes(selectedCategory)) {
             card.style.display = "";
         } else {
             card.style.display = "none";
