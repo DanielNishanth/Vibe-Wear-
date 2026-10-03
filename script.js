@@ -567,24 +567,30 @@ function showAllWomenProducts() {
 }
 function showMenCategory(categoryName) {
 
+    const selectedCategory = categoryName
+        .trim()
+        .toLowerCase();
+
+    // Men's Collection products
     document.querySelectorAll(".men-product-card").forEach(function(card) {
 
         const category = card.querySelector(".product-category");
 
-        if (!category) {
+        if (
+            category &&
+            category.textContent.trim().toLowerCase().includes(selectedCategory)
+        ) {
+            card.style.display = "";
+        } else {
             card.style.display = "none";
-            return;
         }
 
-        const productCategory = category.textContent
-            .trim()
-            .toLowerCase();
+    });
 
-        const selectedCategory = categoryName
-            .trim()
-            .toLowerCase();
+    // Men's T-Shirt from Trending Products
+    document.querySelectorAll(".men-tshirt-product").forEach(function(card) {
 
-        if (productCategory.includes(selectedCategory)) {
+        if (selectedCategory === "t-shirts") {
             card.style.display = "";
         } else {
             card.style.display = "none";
@@ -596,7 +602,6 @@ function showMenCategory(categoryName) {
         behavior: "smooth"
     });
 }
-
 updateCartCount();
 updateWishlistCount();
 // ALWAYS START FROM TOP ON PAGE LOAD
